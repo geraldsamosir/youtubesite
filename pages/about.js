@@ -18,7 +18,13 @@ export default class  About extends Component {
         this.getbanner()
     }
     getbanner(){
-        let _items = JSON.parse(localStorage.items) 
+        let _items =""
+        try {
+             _items = JSON.parse(localStorage.items)             
+        } catch (error) {
+            
+        }
+
     
         this.setState({
             items : _items.bannerImageUrl
