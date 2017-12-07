@@ -1,0 +1,156 @@
+@import url("http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+
+* { padding: 0; margin: 0; }
+body { font-family: sans-serif; }
+a { text-decoration: none; color: white; }
+li { list-style-type: none; }
+
+nav { width: 100%; text-align: center; }
+nav li {}
+nav ul { }
+nav a {
+	padding: 10px; 
+	background: #E5DAC0; 
+	border-radius: 50%;
+	display: block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin: 10px 5px;
+	box-shadow: 0 1px #999;
+	 
+}
+nav a:hover { background: #17A5B5; border-radius: 50%; }
+
+/*----------------------------------------------------*/
+.menu-icon {
+	width: 130px; height: 130px;
+	display: block;
+	text-align: center;
+	line-height: 100px;
+	padding: 38px;
+	cursor: pointer;
+	font-size: 95px;
+  color: #FFF;
+	border: 2px dashed #FFF;
+	border-radius: 50%;
+	background: #0CF;
+	float: left;
+}
+.menu {
+	width: 50px;
+	height: 210px;
+	border: 1px solid #DCCEAC;
+	border-radius: 5px;
+	margin: 50px auto;
+	background: #E1D5B8;
+	position: absolute;
+	top: -280px;
+	opacity: 0;
+	z-index: -1;
+	transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+}
+/*------------------------------------------------------------------------*/
+
+#menuToggle { display: none; }
+
+#menuToggle:checked ~ .facebook { position: absolute; top: 3px; left: 230px; opacity: 1; }
+#menuToggle:checked ~ .twitter { position: absolute; top: 125px; left: 228px; opacity: 1; }
+#menuToggle:checked ~ .google { position: absolute; top: 200px; left: 135px; opacity: 1; }
+#menuToggle:checked ~ .youtube { position: absolute; top: 255px; left: 18px; opacity: 1; }
+
+/*------------------------------------------------------------------------*/
+
+.facebook {
+	width: 100px;
+	height:100px;
+	display: block;
+	position: absolute;
+	top: 6px; left: 6px;
+	background: #1C59BA;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	border: 10px solid #EEE;
+	color: white;
+	cursor: pointer;
+	z-index: -1;
+	opacity: 0;
+	transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+}
+.facebook:hover { background: #000; }
+#menu_title{
+	margin-top: 20px;
+}
+.twitter {
+	width: 100px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	top: 6px; left: 6px;
+	background: #00A5CC;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	border: 5px solid #EEE;
+	cursor: pointer;
+	z-index: -1;
+	opacity: 0;
+	transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+}
+.twitter:hover { background: #000; }
+.google {
+	width: 100px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	top: 6px; left: 6px;
+	background: #C70104;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	border: 5px solid #EEE;
+	cursor: pointer;
+	z-index: -1;
+	opacity: 0;
+	transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+}
+.google:hover { background: #000; }
+.youtube {
+	width: 100px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	top: 6px; left: 6px;
+	background: #C70104;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	border: 5px solid #EEE;
+	cursor: pointer;
+	z-index: -1;
+	opacity: 0;
+	transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+}
+.youtube:hover { background: #000; }
