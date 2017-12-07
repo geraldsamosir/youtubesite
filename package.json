@@ -18,6 +18,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "heroku-postbuild":"next build",
     "start": "next start -p $PORT"
   }
 }
