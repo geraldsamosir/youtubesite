@@ -54,9 +54,6 @@ var _youtube2 = _interopRequireDefault(_youtube);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = "/home/gerald/project/withalders/youtubestatic/component/layout.js";
-
-
 var Layout = function (_Component) {
     (0, _inherits3.default)(Layout, _Component);
 
@@ -123,25 +120,7 @@ var Layout = function (_Component) {
         key: "render",
         value: function render() {
 
-            return _react2.default.createElement("div", {
-                __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 39
-                }
-            }, _react2.default.createElement(_headers2.default, { title: this.state.title, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 40
-                }
-            }), _react2.default.cloneElement(this.props.children, (0, _extends3.default)({}, this.state)), _react2.default.createElement("footer", { style: { flexDirection: "row" }, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 42
-                }
-            }, _react2.default.createElement("center", {
-                __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 43
-                }
-            }, "\xA9 2017  ", this.state.title)));
+            return _react2.default.createElement("div", null, _react2.default.createElement(_headers2.default, { title: this.state.title }), _react2.default.cloneElement(this.props.children, (0, _extends3.default)({}, this.state)), _react2.default.createElement("footer", { style: { flexDirection: "row" } }, _react2.default.createElement("center", null, "\xA9 2017  ", this.state.title)));
         }
     }]);
 
@@ -149,4 +128,3 @@ var Layout = function (_Component) {
 }(_react.Component);
 
 exports.default = Layout;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudC9sYXlvdXQuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJDb21wb25lbnQiLCJIZWFkZXJzIiwieXRBY3Rpb24iLCJMYXlvdXQiLCJwcm9wcyIsInN0YXRlIiwiaXRlbXMiLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwiZ2V0YmFubmVyIiwicmVzdWx0IiwibGVuZ3RoIiwic2V0U3RhdGUiLCJicmFuZGluZ1NldHRpbmdzIiwiaW1hZ2UiLCJjaGFubmVsIiwibG9jYWxTdG9yYWdlIiwic2V0SXRlbSIsImNsb25lRWxlbWVudCIsImNoaWxkcmVuIiwiZmxleERpcmVjdGlvbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFROzs7O0FBRWYsQUFBTyxBQUFlOzs7O0FBQ3RCLEFBQU8sQUFBZ0I7Ozs7Ozs7OztJLEFBR0Q7b0NBQ2xCOztvQkFBQSxBQUFZLE9BQU07NENBQUE7OzBJQUFBLEFBQ1IsQUFDTjs7Y0FBQSxBQUFLO21CQUFRLEFBQ0QsQUFDUjttQkFGUyxBQUVELEFBQ1I7eUJBTFUsQUFFZCxBQUFhLEFBR0k7QUFISixBQUNUO2VBSVA7Ozs7OzRDQUVtQixBQUNoQjtpQkFBQSxBQUFLLEFBQ1I7Ozs7Ozs7Ozs7Ozt1Q0FHc0Isa0JBQUEsQSxBQUFTOztpQ0FBeEI7QSxrREFDSDs7b0NBQUcsT0FBQSxBQUFPLE1BQVAsQUFBYSxTQUFoQixBQUF5QixHQUFFLEFBQ25CO0FBRG1CLDRDQUFBLEFBQ1QsT0FEUyxBQUNuQixBQUNMOzt5Q0FBQSxBQUFLOytDQUNPLE1BQUEsQUFBTSxHQUFOLEFBQVMsaUJBRFAsQUFDd0IsQUFDbEM7K0NBQVEsTUFBQSxBQUFNLEdBQU4sQUFBUyxpQkFBVCxBQUEwQixRQUZ4QixBQUVnQyxBQUMxQztxREFBYSxNQUFBLEFBQU0sR0FBTixBQUFTLGlCQUFULEFBQTBCLFFBSDNDLEFBQWMsQUFHcUMsQUFFbkQ7QUFMYyxBQUNWO2lEQUlKLEFBQWEsUUFBYixBQUFxQixTQUFRLHlCQUFlLE1BQUEsQUFBTSxHQUFOLEFBQVMsaUJBQXJELEFBQTZCLEFBQXlDLEFBQ3JFO2lEQUFBLEFBQWEsUUFBYixBQUFxQixlQUFjLHlCQUFlLE1BQUEsQUFBTSxHQUFOLEFBQVMsaUJBQVQsQUFBMEIsUUFBNUUsQUFBbUMsQUFBaUQsQUFDeEY7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7aUNBSUcsQUFFSjs7bUNBQ0ksY0FBQTs7OEJBQUE7Z0NBQUEsQUFDSTtBQURKO0FBQUEsYUFBQSxrQkFDSSxBQUFDLG1DQUFRLE9BQU8sS0FBQSxBQUFLLE1BQXJCLEFBQTJCOzhCQUEzQjtnQ0FESixBQUNJLEFBQ0M7QUFERDtnQ0FDQyxBQUFNLGFBQWEsS0FBQSxBQUFLLE1BQXhCLEFBQThCLHFDQUFlLEtBRmxELEFBRUssQUFBa0QsQUFDbkQseUJBQUEsY0FBQSxZQUFRLE9BQU8sRUFBRSxlQUFqQixBQUFlLEFBQWlCOzhCQUFoQztnQ0FBQSxBQUNJO0FBREo7K0JBQ0ksY0FBQTs7OEJBQUE7Z0NBQUE7QUFBQTtBQUFBLGVBQ2tCLG9CQUFBLEFBQUssTUFObkMsQUFDSSxBQUdJLEFBQ0ksQUFDNkIsQUFLNUM7Ozs7O0FBMUNnQyxBOztrQkFBZixBIiwiZmlsZSI6ImxheW91dC5qcyIsInNvdXJjZVJvb3QiOiIvaG9tZS9nZXJhbGQvcHJvamVjdC93aXRoYWxkZXJzL3lvdXR1YmVzdGF0aWMifQ==
