@@ -46,43 +46,15 @@ export const  Listblog = class Listblog extends Component{
 
     render(){
 
-        let _items = this.state.items.map((data)=>{
-            return(
-                <div id={data.id.videoId} key={data.id.videoId} 
-                        style={{
-                            flex:"auto",
-                            display: "flex",
-                            marginTop:"10%",
-                            boxShadow: "0 0 8px 0 rgba(0,0,0,0.2)",
-                            transition: "0.3s"
-                        }}>
-                  
-                    <Link href={"/postlist?id="+data.id.videoId}>
-                        <img 
-                            style={{
-                                width :"100%" ,
-                                height : 350 
-                            }}
-                            src={data.snippet.thumbnails.high.url} 
-                            alt=""/>
-                        <h2 style={{
-                            color:"black",
-                        }}>
-                            {data.snippet.title}
-                        </h2>
-                    </Link> 
-                  
-                </div>   
-            )
-        })
-
+       
         let _playlist  = this.state.playlist.map((data)=>{
             return(
                  <div id={data.id} key={data.id} 
                         style={{
-                            flex:"auto",
-                            display: "flex",
-                            marginTop:"10%",
+                           width: "calc(100% / 4)",
+                            marginTop:"4%",
+                            marginRight:"4%",
+                            marginLeft:"4%",
                             boxShadow: "0 0 8px 0 rgba(0,0,0,0.2)",
                             transition: "0.3s"
                         }}>
@@ -111,10 +83,8 @@ export const  Listblog = class Listblog extends Component{
                 </center>
                 <br/>
                 <div style={{
-                        
-                        display:"grid",
-                         gridTemplateColumns: "32% 32% 32% ",   
-                         gridGap:"2%"
+                        display: "flex",
+                        flexWrap: "wrap",
                     }}>
                     {_playlist}
                 </div>

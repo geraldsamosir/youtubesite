@@ -66,9 +66,10 @@ export const   Listblog = class Listblog extends Component{
             return(
                 <div id={data.id.videoId} key={data.id.videoId} 
                         style={{
-                            flex:"auto",
-                            display: "flex",
-                            marginTop:"10%",
+                           width: "calc(100% / 4)",
+                            marginTop:"4%",
+                            marginRight:"4%",
+                            marginLeft:"4%",
                             boxShadow: "0 0 8px 0 rgba(0,0,0,0.2)",
                             transition: "0.3s"
                         }}>
@@ -108,10 +109,8 @@ export const   Listblog = class Listblog extends Component{
                 </center>
                 <br/>
                 <div style={{
-                        
-                        display:"grid",
-                         gridTemplateColumns: "32% 32% 32% ",   
-                         "grid-gap":"2%"
+                        display: "flex",
+                        flexWrap: "wrap"
                     }}>
                     {_items}
                 </div>
