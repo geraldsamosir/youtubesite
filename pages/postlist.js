@@ -9,6 +9,10 @@ import {Link} from  "../component/headers"
 
 import {Commentlist} from "./post"
 
+//style import
+
+import {Style} from  "./post"
+
 
 // list blog
 export const  Listblog = class Listblog extends Component{
@@ -50,14 +54,7 @@ export const  Listblog = class Listblog extends Component{
         let _playlist  = this.state.playlist.map((data)=>{
             return(
                  <div id={data.id} key={data.id} 
-                        style={{
-                           width: "calc(100% / 4)",
-                            marginTop:"4%",
-                            marginRight:"4%",
-                            marginLeft:"4%",
-                            boxShadow: "0 0 8px 0 rgba(0,0,0,0.2)",
-                            transition: "0.3s"
-                        }}>
+                        style={Style.grid()}>
                     <Link href={"/postlist?id="+data.id}>
                     <img
                          style={{

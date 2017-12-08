@@ -65,14 +65,7 @@ export const   Listblog = class Listblog extends Component{
         let _items = this.state.items.map((data)=>{
             return(
                 <div id={data.id.videoId} key={data.id.videoId} 
-                        style={{
-                           width: "calc(100% / 4)",
-                            marginTop:"4%",
-                            marginRight:"4%",
-                            marginLeft:"4%",
-                            boxShadow: "0 0 8px 0 rgba(0,0,0,0.2)",
-                            transition: "0.3s"
-                        }}>
+                        style={Style.grid()}>
                   
                     <Link href={"/post?id="+data.id.videoId}>
                         <img 
@@ -93,14 +86,7 @@ export const   Listblog = class Listblog extends Component{
             )
         })
 
-        let _playlist  = this.state.playlist.map((data)=>{
-            return(
-                <div key={data.id.videoId}>
-                    <img src={data.snippet.thumbnails.high.url} alt=""/>
-                    <h5>{data.snippet.title}</h5>
-                </div>
-            )
-        })
+
 
         return(
             <div style={{display:"block"}}>
@@ -283,4 +269,33 @@ export default class  Posts extends Component {
             
         )
     }
+}
+
+
+export const Style  = {
+
+    grid : ()=>{
+        if(screen.width <= 767) {
+            return {
+                width: "calc(80%)",
+                marginTop:"4%",
+                padding:"2%",
+                marginRight:"8%",
+                marginLeft:"8%",
+                boxShadow: "0 0 8px 0 rgba(0,0,0,0.2)",
+                transition: "0.3s"
+            }
+        }
+        else{
+            return{
+                width: "calc(100% / 4)",
+                marginTop:"4%",
+                marginRight:"4%",
+                marginLeft:"4%",
+                boxShadow: "0 0 8px 0 rgba(0,0,0,0.2)",
+                transition: "0.3s"
+            }
+        }
+    }
+
 }
