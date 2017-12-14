@@ -1,4 +1,4 @@
-import Router from 'next/router'
+import {Router} from '../router'
 import React ,{Component} from  "react"
 
 import stylesheet from  "./style/headers.css"
@@ -6,7 +6,7 @@ import stylesheet from  "./style/headers.css"
 const  onClickHandler = (href) =>{
   return (e) => {
     e.preventDefault()
-    Router.push(href )
+    Router.pushRoute(href )
   }
 }
 
