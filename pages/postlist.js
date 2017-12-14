@@ -55,7 +55,7 @@ export const  Listblog = class Listblog extends Component{
             return(
                  <div id={data.id} key={data.id} 
                         style={Style.grid()}>
-                    <Link href={"/postlist?id="+data.id}>
+                    <Link href={"/postlist/"+data.id}>
                     <img
                          style={{
                                 width :"100%" ,

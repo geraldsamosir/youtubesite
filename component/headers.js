@@ -6,7 +6,7 @@ import stylesheet from  "./style/headers.css"
 const  onClickHandler = (href) =>{
   return (e) => {
     e.preventDefault()
-    Router.push(href)
+    Router.push(href )
   }
 }
 

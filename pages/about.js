@@ -13,6 +13,7 @@ export default class  About extends Component {
         }
     }
     
+    
     componentDidMount() {
         this.getdescription()
         this.getbanner()

@@ -67,7 +67,7 @@ export const   Listblog = class Listblog extends Component{
                 <div id={data.id.videoId} key={data.id.videoId} 
                         style={Style.grid()}>
                   
-                    <Link href={"/post?id="+data.id.videoId}>
+                    <Link href={"/post/"+data.id.videoId}>
                         <img 
                             style={{
                                 width :"100%" ,
@@ -257,7 +257,7 @@ export default class  Posts extends Component {
 
 
     render(){
-       
+    
         return(
             <Layout>
                 {
