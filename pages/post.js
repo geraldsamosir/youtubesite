@@ -122,6 +122,10 @@ export const Commentlist = class Commentlist extends Component{
         this.getallcomment()
     }
 
+    componentWillReceiveProps(){
+        this.getallcomment()
+    }
+
     async getallcomment(){
         let result = await ytAction.getallcomment(this.props.id)
 
